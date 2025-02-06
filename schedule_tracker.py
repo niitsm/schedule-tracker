@@ -18,7 +18,7 @@ st.title("Weekly Schedule Tracker")
 st.write("Update your schedule below:")
 
 # Editable Table
-data_editable = st.experimental_data_editor(schedule_df, num_rows="dynamic")
+data_editable = st.data_editor(schedule_df, num_rows="dynamic")
 
 # Save Updated Data
 if st.button("Save Schedule"):
